@@ -9,10 +9,11 @@
 
 <script>
 export default {
-  name: 'app',
-  data () {
+  data(){
+    return{
     besties:['rose','fery','ed']
     }
+  }
   }
 </script>
 <style>

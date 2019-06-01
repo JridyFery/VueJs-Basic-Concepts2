@@ -1,4 +1,4 @@
-<template>
+ <template>
   <div>
     <h1>{{msg}} </h1>
     <Globalcomponent></Globalcomponent>
@@ -8,12 +8,10 @@
 <script>
 export default {
   name: 'app',
-  data () {
+  data(){
     return {
       msg: 'My first global component'
     }
   }
 }
-</script>
-<style>
-</style>
+</script> 

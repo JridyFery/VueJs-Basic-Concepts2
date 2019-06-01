@@ -1,6 +1,7 @@
 <
 <template>
   <div>
+    <h1>fds</h1>
       <ul>
           <li v-for="bestie in besties"> {{bestie}} </li>
       </ul>
@@ -17,4 +18,7 @@ export default {
   }
 </script>
 <style>
+h1{
+  color:forestgreen;
+}
 </style>

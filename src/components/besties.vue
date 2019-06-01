@@ -2,9 +2,10 @@
 <template>
     <div id="bestie">
         <ul>
-            <li v-for="b in bestie" @click="b.show=!b.show"></li>
-            <h2>{{b.name}} </h2>
+            <li v-for="b in bestie" v-on:click="b.show=!b.show">
+            <h2>{{b.name}}</h2>
             <h3 v-show="b.show">{{b.speciality}} </h3>
+            </li>
         </ul>
     </div>
 </template>
@@ -12,7 +13,8 @@
 <script>
 export default {
     data(){
-        bestie[
+        return{
+        bestie:[
             {name:'Rose',speciality:'Mathemathician',show:false},
             {name:'Wiwi',speciality:'Economist',show:false},
             {name:'Ed',speciality:'Developer',show:false},
@@ -20,6 +22,7 @@ export default {
             {name:'jane',speciality:'Doctor',show:false},
             {name:'kylie',speciality:'Architect',show:false}
         ]
+    }
     }
 
 }
@@ -47,6 +50,4 @@ li{
     padding:30px;
     border:1px solid #222; 
 }
-
-
 </style>

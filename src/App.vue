@@ -31,21 +31,18 @@ h1{
   <app-footer></app-footer>
 </div>
 </template>
-
 <script>
 import Header from './components/header.vue'; 
 import footer from './components/footer.vue';
-import besties from './components/besties.vue';
+import bestie from './components/besties.vue';
 
 export default {
     components:{
       'app-header': Header, 
-      'app-bestie': besties,
+      'app-bestie': bestie,
       'app-footer':footer
   }
 }
 </script>
-
-<style>
-
+<style scoped>
 </style>
